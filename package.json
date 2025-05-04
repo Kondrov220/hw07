@@ -1,0 +1,25 @@
+{
+  "name": "hw07",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": " https://kondrov220.github.io/hw07/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --no-cache --public-url /hw07/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.14.4",
+    "parcel-transformer-hbs": "^1.0.4",
+    "posthtml-include": "^2.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "handlebars": "^4.7.8"
+  }
+}
